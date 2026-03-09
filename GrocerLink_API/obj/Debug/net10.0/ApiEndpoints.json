@@ -1,0 +1,106 @@
+[
+  {
+    "ContainingType": "GrocerLink_API.Controllers.ProductSearchController",
+    "Method": "GetCostcoProducts",
+    "RelativePath": "api/ProductSearch/costco/{search}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GrocerLink_Library.Retailers.Costco.CostcoProducts",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GrocerLink_API.Controllers.ProductSearchController",
+    "Method": "GetNoFrillsProducts",
+    "RelativePath": "api/ProductSearch/nofrills/{search}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GrocerLink_Library.Retailers.NoFrills.NoFrillsProducts",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GrocerLink_API.Controllers.ProductSearchController",
+    "Method": "GetSobeysProducts",
+    "RelativePath": "api/ProductSearch/sobeys/{search}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GrocerLink_Library.Retailers.Sobeys.SobeysProducts",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GrocerLink_API.Controllers.ProductSearchController",
+    "Method": "GetZehrsProducts",
+    "RelativePath": "api/ProductSearch/zehrs/{search}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GrocerLink_Library.Retailers.Zehrs.ZehrsProducts",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

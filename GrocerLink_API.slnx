@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GrocerLink_API/GrocerLink_API.csproj" />
+  <Project Path="GrocerLink_Library/GrocerLink_Library.csproj" Id="f19a4981-5953-48c6-a439-42171ddcdc71" />
+</Solution>
