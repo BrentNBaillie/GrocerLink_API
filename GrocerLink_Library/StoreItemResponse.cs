@@ -70,22 +70,12 @@ namespace GrocerLink_Library
     {
         public string price { get; set; } = string.Empty;
         public string wasPrice { get; set; } = string.Empty;
-        public string displayPrice { get; set; } = string.Empty;
-        public object memberOnlyPrice { get; set; } = new object();
-        public object mopDisplayPrice { get; set; } = new object();
-        public object ehfTotal { get; set; } = new object();
-        public object environmentalHandlingFee { get; set; } = new object();
-        public string taxInfo { get; set; } = string.Empty;
     }
 
     public class PricingUnits
     {
         public string type { get; set; } = string.Empty;
         public string unit { get; set; } = string.Empty;
-        public int interval { get; set; }
-        public int minOrderQuantity { get; set; }
-        public int maxOrderQuantity { get; set; }
-        public bool weighted { get; set; }
     }
 
     public class Deal
@@ -100,8 +90,6 @@ namespace GrocerLink_Library
 
     public class ProductTile
     {
-        public int index { get; set; }
-        public List<Promotion> promotions { get; set; } = new List<Promotion>();
         public object ratings { get; set; } = new object();
         public string productId { get; set; } = string.Empty;
         public List<ProductImage> productImage { get; set; } = new List<ProductImage>();
@@ -111,8 +99,6 @@ namespace GrocerLink_Library
         public string packageSizing { get; set; } = string.Empty;
         public Pricing pricing { get; set; } = new Pricing();
         public PricingUnits pricingUnits { get; set; } = new PricingUnits();
-        public Deal deal { get; set; } = new Deal();
-        public string link { get; set; } = string.Empty;
     }
 
     public class Root

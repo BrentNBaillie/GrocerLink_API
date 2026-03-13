@@ -129,45 +129,6 @@
           }
         }
       }
-    },
-    "/api/ProductSearch/sobeys/{search}": {
-      "get": {
-        "tags": [
-          "ProductSearch"
-        ],
-        "parameters": [
-          {
-            "name": "search",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/SobeysProducts"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SobeysProducts"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SobeysProducts"
-                }
-              }
-            }
-          }
-        }
-      }
     }
   },
   "components": {
@@ -186,48 +147,9 @@
           }
         }
       },
-      "Deal": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "type": "string"
-          },
-          "text": {
-            "type": "string"
-          },
-          "points": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "name": {
-            "type": "string"
-          },
-          "expiryDate": {
-            "type": [
-              "null",
-              "string"
-            ],
-            "format": "date-time"
-          },
-          "dealPrice": { }
-        }
-      },
       "Doc": {
         "type": "object",
         "properties": {
-          "item_disponzeroinv": {
-            "type": "boolean"
-          },
-          "item_fsa_eligible": {
-            "type": "boolean"
-          },
-          "item_product_marketing_statement": {
-            "type": "string"
-          },
           "item_location_pricing_salePrice": {
             "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$",
             "type": [
@@ -235,12 +157,6 @@
               "string"
             ],
             "format": "double"
-          },
-          "item_as400_category": {
-            "type": "string"
-          },
-          "item_image_swatchable": {
-            "type": "boolean"
           },
           "item_collateral_primaryimage": {
             "type": "string"
@@ -668,16 +584,6 @@
           },
           "wasPrice": {
             "type": "string"
-          },
-          "displayPrice": {
-            "type": "string"
-          },
-          "memberOnlyPrice": { },
-          "mopDisplayPrice": { },
-          "ehfTotal": { },
-          "environmentalHandlingFee": { },
-          "taxInfo": {
-            "type": "string"
           }
         }
       },
@@ -689,33 +595,6 @@
           },
           "unit": {
             "type": "string"
-          },
-          "interval": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "minOrderQuantity": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "maxOrderQuantity": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "weighted": {
-            "type": "boolean"
           }
         }
       },
@@ -754,20 +633,6 @@
       "ProductTile": {
         "type": "object",
         "properties": {
-          "index": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "promotions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Promotion"
-            }
-          },
           "ratings": { },
           "productId": {
             "type": "string"
@@ -795,49 +660,6 @@
           },
           "pricingUnits": {
             "$ref": "#/components/schemas/PricingUnits"
-          },
-          "deal": {
-            "$ref": "#/components/schemas/Deal"
-          },
-          "link": {
-            "type": "string"
-          }
-        }
-      },
-      "Promotion": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "type": "string"
-          },
-          "quantity": { },
-          "savings": { },
-          "value": { },
-          "promoCode": {
-            "type": "string"
-          },
-          "expiryDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "title": { },
-          "promoType": { },
-          "pricingMethod": {
-            "type": "string"
-          },
-          "text": {
-            "type": "string"
-          },
-          "reward": {
-            "type": "string"
-          }
-        }
-      },
-      "SobeysProducts": {
-        "type": "object",
-        "properties": {
-          "retailer": {
-            "type": "string"
           }
         }
       },

@@ -9,12 +9,7 @@ namespace GrocerLink_Library.Retailers.Costco
 
         public class Doc
         {
-            public bool item_disponzeroinv { get; set; }
-            public bool item_fsa_eligible { get; set; }
-            public string item_product_marketing_statement { get; set; } = string.Empty;
             public double item_location_pricing_salePrice { get; set; }
-            public string item_as400_category { get; set; } = string.Empty;
-            public bool item_image_swatchable { get; set; }
             public string item_collateral_primaryimage { get; set; } = string.Empty;
             public string item_product_price_in_cart_only { get; set; } = string.Empty;
             public List<string> item_pill_attributes { get; set; } = [];
@@ -63,7 +58,7 @@ namespace GrocerLink_Library.Retailers.Costco
             public bool item_member_only { get; set; }
             public string item_classification_itemclass { get; set; } = string.Empty;
             public string item_product_primary_image { get; set; } = string.Empty;
-            public string id { get; set; }
+            public string id { get; set; } = string.Empty;
             public DateTime item_startDate { get; set; }
             public int item_product_status_backorderflag { get; set; }
             public int item_product_status_backorderqty { get; set; }

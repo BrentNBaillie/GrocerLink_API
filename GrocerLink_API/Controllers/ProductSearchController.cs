@@ -1,8 +1,9 @@
 ﻿using GrocerLink_Library;
+using GrocerLink_Library.Retailers.Costco;
 using GrocerLink_Library.Retailers.NoFrills;
 using GrocerLink_Library.Retailers.Zehrs;
 using Microsoft.AspNetCore.Mvc;
-using GrocerLink_Library.Retailers.Costco;
+using System.Net;
 
 namespace GrocerLink_API.Controllers
 {
@@ -44,11 +45,7 @@ namespace GrocerLink_API.Controllers
         [HttpGet("costco/{search}")]
         public async Task<ActionResult<CostcoProducts>> GetCostcoProducts(string search)
         {
-            string url = stores["Costco"]!.Replace("{search}", search);
-            CostcoResponse.CostcoRoot? root = await client.GetFromJsonAsync<CostcoResponse.CostcoRoot>(url);
-            if (root is null) return BadRequest();
-            List<CostcoResponse.Doc> products = root.response.docs.ToList();
-            return Ok(new CostcoProducts { Products = products});
+            return Ok();
         }
     }
 }

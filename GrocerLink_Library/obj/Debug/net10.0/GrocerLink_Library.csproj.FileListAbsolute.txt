@@ -9,3 +9,4 @@ C:\Github Projects\GrocerLink_API\GrocerLink_Library\obj\Debug\net10.0\GrocerLin
 C:\Github Projects\GrocerLink_API\GrocerLink_Library\obj\Debug\net10.0\refint\GrocerLink_Library.dll
 C:\Github Projects\GrocerLink_API\GrocerLink_Library\obj\Debug\net10.0\GrocerLink_Library.pdb
 C:\Github Projects\GrocerLink_API\GrocerLink_Library\obj\Debug\net10.0\ref\GrocerLink_Library.dll
+C:\Github Projects\GrocerLink_API\GrocerLink_Library\obj\Debug\net10.0\GrocerLink_Library.sourcelink.json
