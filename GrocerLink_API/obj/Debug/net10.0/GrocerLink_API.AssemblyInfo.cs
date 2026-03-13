@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GrocerLink_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9d72d5a1d64e879803448932aeac55493be7da8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9eb9848b68803ec4845bb3827d7a16aafc9673f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GrocerLink_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GrocerLink_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

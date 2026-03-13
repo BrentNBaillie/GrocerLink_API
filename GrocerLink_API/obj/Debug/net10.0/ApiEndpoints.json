@@ -15,7 +15,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "GrocerLink_Library.Retailers.Costco.CostcoProducts",
+        "Type": "GrocerLink_Library.RetailerProduct",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -41,7 +41,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "GrocerLink_Library.Retailers.NoFrills.NoFrillsProducts",
+        "Type": "GrocerLink_Library.RetailerProduct",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -67,7 +67,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "GrocerLink_Library.Retailers.Zehrs.ZehrsProducts",
+        "Type": "GrocerLink_Library.RetailerProduct",
         "MediaTypes": [
           "text/plain",
           "application/json",

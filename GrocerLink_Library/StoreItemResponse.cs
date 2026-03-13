@@ -78,16 +78,6 @@ namespace GrocerLink_Library
         public string unit { get; set; } = string.Empty;
     }
 
-    public class Deal
-    {
-        public string type { get; set; } = string.Empty;
-        public string text { get; set; } = string.Empty;
-        public int points { get; set; }
-        public string name { get; set; } = string.Empty;
-        public DateTime? expiryDate { get; set; }
-        public object dealPrice { get; set; } = new object();
-    }
-
     public class ProductTile
     {
         public object ratings { get; set; } = new object();
